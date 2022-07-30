@@ -1,0 +1,8 @@
+{
+    "input_audio_file": "/home/ashok/kc/emotional_speech/input/ravdess/Actor_11/03-01-03-01-02-01-11.wav",
+    "model_file": "/home/ashok/kc/emotional_speech/models/xgbx_v1_normalized1D_2500ms_mfcc.joblib",
+    "output_txt_file": "/home/ashok/kc/emotional_speech/output/ser.txt",
+    "output_blend_file": "/home/ashok/kc/emotional_speech/output/face_emotions.blend",
+    "fbx_model_file": "/home/ashok/kc/emotional_speech/assets/palpatine-head/source/Palpatine Head/Palpatine Head.fbx",
+    "fbx_model_name": "Head"
+}
