@@ -26,8 +26,21 @@ X = np.array([X.ravel()], dtype=np.float32)
 
 # Predict emotion
 y_pred = model.predict(X)
-emotion = y_pred[0]
+
+# Get meaningful format
+id2emotion = {
+    0: "neutral",
+    1: "calm",
+    2: "happy",
+    3: "sad",
+    4: "angry",
+    5: "fearful",
+    6: "disgust",
+    7: "surprised"
+}
+emotion = {id2emotion[i]:0.0 for i in range(8)}
+emotion[id2emotion[y_pred[0]]] = 1.0
 
 # Save output
-with open(config["output_txt_file"], "w") as f:
-    f.write(str(emotion))
+with open(config["output_json_file"], "w") as f:
+    json.dump(emotion, f)
