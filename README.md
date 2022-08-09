@@ -1,5 +1,11 @@
 ## Speech to emotion classifier
 
+Make face animations of audience basis on the delivery of speech.
+
+Behind the scenese, it classifies speech audio into 8 classes of emotions - neutral, calm, happy, sad, angry, fearful, disgust, and surprised.
+
+![Screenshot](media/single_blendface_ss1.png)
+
 ## Setup
 
 ```zsh
@@ -12,7 +18,8 @@ $ pip install -r requirements.txt
 
 ## Training code
 
-In order to train the models, you need to download RAVDESS dataset - speech audio only.
+In order to train the models, you need to download RAVDESS dataset - speech audio only.<br>
+Trained models will be available for download soon.
 
 Go through the following notebooks in order.
 1. split_process_data.ipynb
@@ -21,18 +28,25 @@ Go through the following notebooks in order.
 
 ## How to run
 
-```bash
-$ sh run.sh
-```
+1. Set paths and configuration in `config.json`.
+2. `sh run.sh`
 
 ## Evaluation
 
-Evaluated 3 models trained on RAVDESS dataset (excluding song audio).
+Evaluated 3 models trained on RAVDESS dataset (excluding song audio).<br>
+It has 8 classes - ["neutral","calm","happy","sad","angry","fearful","disgust","surprised"]
 
-Accuracy observed on 8 classes in train/validation/test datasets.
+Following accuracy is observed on 16 classes (8 classes bifuracted further by gender) in train/validation/test datasets.
+
 1. XGBoost: ~95% / ~41% / ~25%
 2. LSTM (3 layers - 64-64-64): ~76% / ~46% / ~26%
 3. CNN (3 layers - 32-64-128): ~93% / ~50% / ~30%
+
+Predicting gender through voice is decent given the size of the dataset. Accuracy observed is as follows:
+
+1. XGBoost: ~85%
+2. LSTM (3 layers - 64-64-64): ~90%
+3. CNN (3 layers - 32-64-128): ~87%
 
 ## Work required for production
 - Improving accuracy of the speech models
@@ -41,3 +55,8 @@ Accuracy observed on 8 classes in train/validation/test datasets.
 - Real time smooth animation of different faces
     - Asynchronuos / Trigger calls to blender engine
     - Optimized predictions
+
+## Contributing
+I made this project to improve public speaking (Some people will frown or make faces even when you are right, you just have to be confident ;)
+
+More use cases, issues or pull requests are most welcome.
