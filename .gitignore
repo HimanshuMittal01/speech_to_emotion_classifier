@@ -2,9 +2,9 @@
 input/
 assets/
 
-# Temporary
-notebooks/
-
 # Models
 models/
 output/
+
+# Cache
+**/*.pyc

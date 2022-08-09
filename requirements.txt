@@ -5,6 +5,4 @@ joblib
 hyperopt
 librosa
 scikit-learn
-
-# Optional (Visualisation)
 seaborn
