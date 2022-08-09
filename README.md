@@ -34,8 +34,10 @@ Accuracy observed on 8 classes in train/validation/test datasets.
 2. LSTM (3 layers - 64-64-64): ~76% / ~46% / ~26%
 3. CNN (3 layers - 32-64-128): ~93% / ~50% / ~30%
 
-## Future work
+## Work required for production
 - Improving accuracy of the speech models
     - By using extra training datasey, maybe including song set and other datasets
     - Cross validation
 - Real time smooth animation of different faces
+    - Asynchronuos / Trigger calls to blender engine
+    - Optimized predictions
