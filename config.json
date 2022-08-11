@@ -1,5 +1,5 @@
 {
-    "input_audio_file": "/home/ashok/kc/emotional_speech/input/ravdess/Actor_11/03-01-03-01-02-01-11.wav",
+    "input_audio_file": "/home/ashok/kc/emotional_speech/input/sample_recording1.wav",
     "model_file": "/home/ashok/kc/emotional_speech/models/cnn_v1_stdmfcc2D_2.5ms.pt",
     "model_name": "cnn",
     "output_json_file": "/home/ashok/kc/emotional_speech/output/ser.json",

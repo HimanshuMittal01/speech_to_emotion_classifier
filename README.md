@@ -1,5 +1,7 @@
 ## Speech to emotion classifier
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 Make face animations of audience basis on the delivery of speech.
 
 Behind the scenese, it classifies speech audio into 8 classes of emotions - neutral, calm, happy, sad, angry, fearful, disgust, and surprised.
@@ -56,7 +58,7 @@ Predicting gender through voice is decent given the size of the dataset. Accurac
     - Asynchronuos / Trigger calls to blender engine
     - Optimized predictions
 
-## Contributing
+## Contributing [![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/dwyl/esta/issues)
 I made this project to improve public speaking (Some people will frown or make faces even when you are right, you just have to be confident ;)
 
 More use cases, issues or pull requests are most welcome.
