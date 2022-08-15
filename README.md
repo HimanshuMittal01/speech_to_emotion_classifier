@@ -2,9 +2,9 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-Make face animations of audience basis on the delivery of speech.
+Create live audience reactions animated from an audio speech that behind the scenes is predicting emotions every half a second.
 
-Behind the scenese, it classifies speech audio into 8 classes of emotions - neutral, calm, happy, sad, angry, fearful, disgust, and surprised.
+It classifies speech audio into 8 classes of emotions - neutral, calm, happy, sad, angry, fearful, disgust, and surprised.
 
 ![Screenshot](media/single_blendface_ss1.png)
 
